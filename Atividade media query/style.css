@@ -8,18 +8,38 @@
 .header{
     background-color: black;
     width: 100%;
-    height: 150px;
+    height: auto;
 }
 .footer{
+    display: flex;
+    justify-content: space-around;
     background-color: black;
-    width: 100%;
-    height: 100px;
+    
 }
 .main{
     width: 100%;
-    height: 90vh;
+    height: auto;
 }
 h2{
     color: white;
     padding: 20px;
+}
+img{
+    width: 50px;
+    height: auto;
+}
+
+@media only screen and (max-width: 480px){
+    p{
+        font-size: larger;
+        color: red;
+    }
+    img{
+        width: 80px;
+        height: auto;
+    }
+    h2{
+        font-size: 50px;
+    }
+
 }

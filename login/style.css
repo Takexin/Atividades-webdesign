@@ -1,0 +1,29 @@
+form{
+    border: 1px black solid;
+    width: 50%;
+    height: 50vh;
+    margin: 10% auto;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width: 10%;
+    margin: auto;
+}
+
+form input{
+    width: 50%;
+    margin: auto;
+}
+
+
+@media screen and (max-width:600px) {
+    form{
+        background-color: black;
+        color: white;
+    }
+}

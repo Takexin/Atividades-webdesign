@@ -15,8 +15,10 @@ header {
     background: rgb(2,11,21);
     color: white;
     padding: 10px 0;
+    width: 100%;
     text-align: center;
-    
+    position: fixed;
+    top: 0;
 }
 
 #about{

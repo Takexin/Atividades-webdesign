@@ -1,0 +1,19 @@
+{
+  "name": "desafio__ajuste_site",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node script.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "@google/generative-ai": "^0.19.0",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
+    "fs": "^0.0.1-security"
+  },
+  "main": "script.js",
+  "description": ""
+}

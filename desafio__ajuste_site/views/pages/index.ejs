@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Site modificação</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://localhost:3000/scripts/style.css">
 </head>
 <body>
     <header>
@@ -24,16 +24,17 @@
         <div class="hero-content">
             <h1>Welcome to the Future of Web Design</h1>
             <p>Modern, sleek, and interactive user experience.</p>
-            <form method="post"  action="/prompt">
+            <form method="post" action="/prompt">
                 <input type="text" name="prompt" id="prompt">
                 <input type="submit" value="prompt" class="btn">
             </form>
-            <p id="test"></p>
+            <p id="test"><%= locals.text %></p>
             
         </div>
     </section>
 
     <section id="about" class="about-section">
+        <%- include("test")%>
         <h2>Sobre Nós</h2>
         <p>Somos a empresa que foi longe demais. E agora estamos indo além:
             ajudando você a fugir do tédio online!</p>
@@ -78,6 +79,6 @@
         <p>Endereço: Rua do Programador, 404 – Página Não Encontrada, BR</p>
     </footer>
     <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4cgOWE-BH7t_9XJw5X09VXi6Wuz5uvOEUtQ&s" target="_blank"><img src="img/WhatsApp.svg.png" id="wassap"></a>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>

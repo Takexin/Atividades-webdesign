@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="img/Fiap-logo-novo-removebg-preview.png" alt="logo"></div>
+            <div class="logo"><a href="#home"><img src="img/Fiap-logo-novo-removebg-preview.png" alt="logo"></a></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Sobre nós</a></li>
@@ -26,14 +26,21 @@
             <p>Modern, sleek, and interactive user experience.</p>
             <form method="post" action="/prompt">
                 <input type="text" name="prompt" id="prompt">
+                <input type="submit" style="height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true" />
                 <input type="submit" value="prompt" class="btn">
             </form>
-            <p id="test"><%= locals.text %></p>
+            
             
         </div>
     </section>
-
+    <div class="promptContainer">
+        <div class="promptRes">
+            <%- locals.text %>
+            </div>
+    </div>
+    
     <section id="about" class="about-section">
+        
         <%- include("test")%>
         <h2>Sobre Nós</h2>
         <p>Somos a empresa que foi longe demais. E agora estamos indo além:

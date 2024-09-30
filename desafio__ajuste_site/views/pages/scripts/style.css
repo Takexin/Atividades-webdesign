@@ -19,6 +19,7 @@ header {
     text-align: center;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 #about{
@@ -98,6 +99,7 @@ header {
 
 .btn:hover {
     background-color: #12f31259;
+    cursor: pointer;
 }
 
 .about-section, .services-section {
@@ -144,4 +146,22 @@ footer {
     bottom: 30px;
     width: 70px;
     
+}
+
+.radio{
+    cursor: pointer;
+}
+.promptContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.promptRes{
+    background-color: lightgray;
+    width: 700px;
+    height: 500px;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    color: black;
 }

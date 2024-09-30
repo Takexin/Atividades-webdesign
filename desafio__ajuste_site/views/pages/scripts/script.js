@@ -2,7 +2,7 @@
 //  var formInfo = new FormData(myForm);
  
 //     myForm.addEventListener("submit", (event) => {
-//         event.preventDefault(); // Prevent default form submission
+//         event.preventDefault();
 //         var formElement = myForm.querySelectorAll("[name = 'q1'][checked]")
 //         formInfo.append("q1", formElement.value);
 
@@ -13,5 +13,5 @@
 //         .then(response => response.json()) 
 //         .then(data => {
 //             console.log("Response from server:", data); 
-//             // Process the data from your server here
+            
 //         })})

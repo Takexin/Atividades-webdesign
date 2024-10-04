@@ -24,11 +24,12 @@
         <div class="hero-content">
             <h1>Welcome to the Future of Web Design</h1>
             <p>Modern, sleek, and interactive user experience.</p>
-            <form method="post" action="/prompt">
+            <form method="post" action="/prompt" id="promptForm">
                 <input type="text" name="prompt" id="prompt">
                 <input type="submit" style="height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true" />
                 <input type="submit" value="prompt" class="btn">
             </form>
+            <p id="formOutput"></p>
             
             
         </div>
@@ -38,7 +39,10 @@
             <%- locals.text %>
             </div>
     </div>
-    
+    <form action="/test" id="formTest">
+        <input type="submit" value="submit" class="btn">
+    </form>
+    <p id="formTestRes"></p>
     <section id="about" class="about-section">
         
         <%- include("test")%>

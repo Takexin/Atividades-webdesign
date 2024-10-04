@@ -25,13 +25,18 @@ app.get("/", (req, res)=>{
     console.log("just got a get request");
     res.render("pages/index");
 });
+app.get("/test", async(req, res)=>{
+    const text = JSON.stringify("this is the response!");
+    res.json("this is the response!");
+}); 
 app.post("/prompt", async(req, res)=>{
     var prompt = new String(req.body.prompt);
-    sysIns = "Answer the prompt sent to you, but comunicate ONLY with HTML and CSS elements."
-    message =  await chat(prompt.toString(), sysIns);
-    await res.render("pages/index", {text: message});
+    //sysIns = "";
+    //message =  await chat(prompt.toString());
+    //res.render("pages/index", {text: message});
     console.log(`res: ${req.body.prompt}`);
-    console.log(message);
+    res.send(req.body.prompt);
+    //console.log(message);
 });
 app.post("/form", async(req, res)=>{
     console.log("sent form");

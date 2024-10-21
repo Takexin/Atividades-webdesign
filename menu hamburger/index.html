@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header Responsivo com Menu Hambúrguer</title>
+    <style>
+      /* Reset básico */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      } /* Estilo do Header */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 15px 20px;
+        filter: drop-shadow(0 10px 4px #acacacdd);
+      }
+      .logo {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+      } /* Menu de navegação */
+      .navbar ul {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+      }
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+      } /* Ícone de hambúrguer */
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+      }
+      .hamburger span {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+      } /* Responsividade */
+      @media (max-width: 768px) {
+        .navbar {
+          display: none;
+        }
+        .hamburger {
+          display: flex;
+        }
+        .navbar.active {
+          display: block;
+          position: absolute;
+          top: 60px;
+          right: 20px;
+          background-color: #333;
+          padding: 10px;
+          border-radius: 5px;
+        }
+        .nav-links {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Minha Logo</div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span> <span></span> <span></span>
+      </div>
+    </header>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navbar = document.querySelector(".navbar");
+      hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

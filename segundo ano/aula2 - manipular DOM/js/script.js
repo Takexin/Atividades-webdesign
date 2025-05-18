@@ -1,5 +1,4 @@
-document.getElementById("adicionar").addEventListener("click", ()=>{
-    let inputTarefa = document.getElementById("novaTarefa");
+document.getElementById("adicionar").addEventListener("click", ()=>{ let inputTarefa = document.getElementById("novaTarefa");
     let tarefaTexto = inputTarefa.value.trim(); //retira space left
     
     if(tarefaTexto === "")return; //sair da função
